@@ -105,11 +105,11 @@ export default function Hero() {
       
       {/* GDG Logo Placeholder */}
       <div ref={logoRef} className="absolute top-8 left-8 md:top-12 md:left-12 flex items-center gap-4 opacity-80 hover:opacity-100 transition-opacity duration-300 mix-blend-difference">
-        <div className="w-12 h-12 rounded-full flex items-center justify-center animate-pulse overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20">
+        <div className="h-12 flex items-center justify-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg px-2">
           <img 
-            src="https://placehold.co/100x100/transparent/white?text=GDG" 
+            src="/gdg-logo-new.png" 
             alt="GDG Logo" 
-            className="w-full h-full object-contain p-1"
+            className="h-full w-auto object-contain"
           />
         </div>
         <div className="flex flex-col items-start">
@@ -119,29 +119,37 @@ export default function Hero() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 px-4 transform-style-3d">
-        <h1 ref={titleRef} className="text-6xl md:text-9xl font-serif font-bold text-transparent stroke-text tracking-tighter mb-4 transform-style-3d" style={{ textShadow: "0 10px 30px rgba(229, 9, 20, 0.5)" }}>
-          ICAC 1.0
-        </h1>
+      <div className="relative z-10 px-4 transform-style-3d flex flex-col items-center">
         
-        <div ref={subtitleRef} className="space-y-4">
-          <p className="text-xl md:text-3xl text-white font-mono tracking-widest">
-            INTER CAMPUS ALGORITHMIC CUP
-          </p>
-          <p className="text-sm md:text-base text-gray-400 font-mono max-w-lg mx-auto">
-            ENTER THE UPSIDE DOWN OF CODING
-          </p>
+        {/* Title */}
+        <div className="relative">
+          <h1 ref={titleRef} className="text-7xl md:text-[10rem] font-serif font-bold text-blood tracking-tighter mb-2 transform-style-3d relative z-10" style={{ textShadow: "0 0 40px rgba(197, 15, 31, 0.6), 0 0 80px rgba(197, 15, 31, 0.3)" }}>
+            ICAC
+          </h1>
+          {/* Title Glow Behind */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-blood/20 blur-[100px] -z-10 rounded-full pointer-events-none" />
+        </div>
+        
+        <div ref={subtitleRef} className="space-y-6 max-w-4xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-xl md:text-2xl font-mono tracking-widest text-white/90">
+            <span>INTER CAMPUS ALGORITHMIC CUP</span>
+            
+          </div>
+          
+
         </div>
 
-        <div ref={ctaRef} className="mt-12">
+        <div ref={ctaRef} className="mt-16">
           <Link 
             href="https://unstop.com" 
             target="_blank"
-            className="group relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group"
+            className="group relative inline-flex items-center justify-center px-16 py-5 overflow-hidden font-mono font-bold tracking-widest text-white bg-transparent border border-blood/50 rounded-lg transition-all duration-300 hover:border-blood hover:shadow-[0_0_30px_rgba(197,15,31,0.4)]"
           >
-            <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-blood rounded-full group-hover:w-56 group-hover:h-56"></span>
-            <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
-            <span className="relative text-xl tracking-widest group-hover:text-white transition-colors duration-300">ENTER THE VOID</span>
+            <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-blood rounded-full group-hover:w-80 group-hover:h-80 opacity-90"></span>
+            <span className="relative z-10 flex items-center gap-3">
+              ENTER THE VOID
+              <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </span>
           </Link>
         </div>
       </div>

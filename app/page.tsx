@@ -10,7 +10,7 @@ import Sponsors from "./components/Sponsors";
 import Prizes from "./components/Prizes";
 import Footer from "./components/Footer";
 import SplashScreen from "./components/SplashScreen";
-import Cursor from "./components/Cursor";
+
 import LivingBackground from "./components/LivingBackground";
 import Storm from "./components/Storm";
 
@@ -22,8 +22,7 @@ export default function Home() {
       {/* Splash Screen */}
       {loading && <SplashScreen onFinish={() => setLoading(false)} />}
       
-      {/* Custom Cursor */}
-      <Cursor />
+
 
       {/* Living Background (The Rift) */}
       <LivingBackground />

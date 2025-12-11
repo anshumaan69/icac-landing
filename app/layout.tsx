@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Merriweather, Space_Mono } from "next/font/google";
 import "./globals.css";
+import CustomCursor from "./components/CustomCursor";
 
 const serif = Merriweather({
   weight: ["300", "400", "700", "900"],
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${serif.variable} ${mono.variable} antialiased bg-black text-white overflow-x-hidden`}
       >
+        <CustomCursor />
         {children}
       </body>
     </html>
