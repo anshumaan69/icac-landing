@@ -154,6 +154,14 @@ export default function Hero() {
         </div>
       </div>
       
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-20 opacity-0 animate-[fade-in_1s_ease-out_4s_forwards]">
+        <span className="text-[10px] font-mono tracking-[0.3em] text-white/50 uppercase">Scroll to Explore</span>
+        <div className="w-5 h-8 border border-white/20 rounded-full flex justify-center pt-2">
+          <div className="w-1 h-1.5 bg-blood rounded-full animate-bounce" />
+        </div>
+      </div>
+      
       {/* Floating Particles/Spores */}
       <div className="absolute inset-0 pointer-events-none">
         {particles.map((style, i) => (
