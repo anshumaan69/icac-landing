@@ -4,6 +4,7 @@ import { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Link from "next/link";
+import { BookOpen, FileSpreadsheet } from "lucide-react";
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -139,7 +140,7 @@ export default function Hero() {
 
         </div>
 
-        <div ref={ctaRef} className="mt-16">
+        <div ref={ctaRef} className="mt-16 flex flex-col items-center gap-6">
           <Link 
             href="https://unstop.com" 
             target="_blank"
@@ -151,6 +152,23 @@ export default function Hero() {
               <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </span>
           </Link>
+
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+            <Link 
+              href="#" 
+              className="flex items-center gap-2 px-6 py-3 text-sm font-mono text-gray-400 hover:text-white border border-transparent hover:border-white/20 rounded-md transition-all duration-300 bg-white/5 hover:bg-white/10"
+            >
+              <BookOpen className="w-4 h-4 text-blood" />
+              <span>Rule Book</span>
+            </Link>
+            <Link 
+              href="#" 
+              className="flex items-center gap-2 px-6 py-3 text-sm font-mono text-gray-400 hover:text-white border border-transparent hover:border-white/20 rounded-md transition-all duration-300 bg-white/5 hover:bg-white/10"
+            >
+              <FileSpreadsheet className="w-4 h-4 text-blood" />
+              <span>Brochure</span>
+            </Link>
+          </div>
         </div>
       </div>
       

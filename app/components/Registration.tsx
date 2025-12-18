@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollRevealText from "./ScrollRevealText";
 import Link from "next/link";
-import { CheckCircle, CreditCard, FileText, UserPlus, Clock } from "lucide-react";
+import { CheckCircle, CreditCard, FileText, UserPlus, Clock, FileSpreadsheet } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -81,13 +81,21 @@ export default function Registration() {
 
         </div>
 
-        <div className="mt-16 text-center reg-card">
+        <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-6 reg-card">
           <Link 
             href="https://unstop.com" 
             target="_blank"
             className="inline-flex items-center gap-2 px-8 py-4 bg-blood text-white font-bold uppercase tracking-widest hover:bg-red-700 transition-all duration-300 rounded-sm shadow-[0_0_20px_rgba(229,9,20,0.4)]"
           >
             Register Now <CheckCircle className="w-5 h-5" />
+          </Link>
+
+          <Link 
+            href="#" 
+            target="_blank"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border border-gray-700 text-gray-300 font-bold uppercase tracking-widest hover:bg-white/5 hover:border-gray-500 hover:text-white transition-all duration-300 rounded-sm"
+          >
+            Submit Details <FileSpreadsheet className="w-5 h-5" />
           </Link>
         </div>
       </div>
