@@ -95,7 +95,7 @@ export default function Registration() {
             target="_blank"
             className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border border-gray-700 text-gray-300 font-bold uppercase tracking-widest hover:bg-white/5 hover:border-gray-500 hover:text-white transition-all duration-300 rounded-sm"
           >
-            Submit Details <FileSpreadsheet className="w-5 h-5" />
+            Register via Google Form <FileSpreadsheet className="w-5 h-5" />
           </Link>
         </div>
       </div>

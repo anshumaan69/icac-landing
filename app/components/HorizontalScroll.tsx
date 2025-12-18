@@ -164,7 +164,7 @@ export default function HorizontalScroll() {
                   </div>
                 </div>
                 <p className="mt-6 text-gray-400 italic border-l-2 border-blood pl-4">
-                  "120 minutes of intense algorithmic warfare."
+                  "200 minutes of intense algorithmic warfare."
                 </p>
               </div>
             </div>
