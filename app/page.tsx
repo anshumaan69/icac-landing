@@ -101,7 +101,7 @@ export default function Home() {
         <Registration />
         <Prizes />
         <SpecialGuest />
-        <Sponsors />
+        {/* <Sponsors /> */}
         <Footer />
       </div>
     </main>

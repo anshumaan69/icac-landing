@@ -82,7 +82,7 @@ export default function HorizontalScroll() {
                   </div>
                   <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-neon-blue" />
-                    <span>6:00 PM - 8:00 PM</span>
+                    <span>120 minutes</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Globe className="w-5 h-5 text-neon-blue" />
@@ -90,7 +90,7 @@ export default function HorizontalScroll() {
                   </div>
                 </div>
                 <p className="mt-6 text-gray-400 italic border-l-2 border-neon-blue pl-4">
-                  "Top 40 teams qualify for the final showdown."
+                  "Top 30 teams qualify for the final showdown."
                 </p>
               </div>
             </div>
@@ -117,10 +117,10 @@ export default function HorizontalScroll() {
                     <Calendar className="w-5 h-5 text-purple-500" />
                     <span>Feb 18th, 2026</span>
                   </div>
-                  <div className="flex items-center gap-3">
+                  {/* <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-purple-500" />
                     <span>5:00 PM - 7:00 PM</span>
-                  </div>
+                  </div> */}
                   <div className="flex items-center gap-3">
                     <Globe className="w-5 h-5 text-purple-500" />
                     <span>Google Meet</span>
@@ -156,7 +156,7 @@ export default function HorizontalScroll() {
                   </div>
                   <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-blood" />
-                    <span>11:00 AM - 2:20 PM</span>
+                    <span>200 minutes</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <MapPin className="w-5 h-5 text-blood" />

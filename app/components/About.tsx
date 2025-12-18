@@ -19,7 +19,7 @@ export default function About() {
         
         <div className="text-lg md:text-xl text-gray-300 font-mono leading-relaxed">
           <Typewriter 
-            text="Welcome to the Upside Down of coding. ICAC 1.0 is not just a competition; it's a survival test for your algorithmic skills. Navigate through the void, solve the mysteries, and emerge as the champion of the other side."
+            text="Welcome to the Upside Down of coding. ICAC  is not just a competition; it's a survival test for your algorithmic skills. Navigate through the void, solve the mysteries, and emerge as the champion of the other side."
             speed={0.03}
             delay={0.5}
           />

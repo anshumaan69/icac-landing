@@ -44,15 +44,15 @@ export default function Registration() {
             <ul className="space-y-6 font-mono text-gray-300">
               <li className="flex items-center gap-4">
                 <CreditCard className="w-6 h-6 text-blood" />
-                <span className="text-xl">Fee: ₹200 per team</span>
+                <span className="text-xl">Fee: ₹199 per team</span>
               </li>
               <li className="flex items-center gap-4">
                 <UserPlus className="w-6 h-6 text-blood" />
-                <span className="text-xl">Team Size: 2-3 Members</span>
+                <span className="text-xl">Team Size: 1-3 Members</span>
               </li>
               <li className="flex items-center gap-4">
                 <Clock className="w-6 h-6 text-blood" />
-                <span className="text-xl text-blood font-bold">Ends: Feb 14th, 2026</span>
+                <span className="text-xl text-blood font-bold">Ends: Feb 8th, 2026</span>
               </li>
             </ul>
           </div>
