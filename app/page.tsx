@@ -11,6 +11,8 @@ import Prizes from "./components/Prizes";
 import Footer from "./components/Footer";
 import SplashScreen from "./components/SplashScreen";
 
+import NetflixIntro from "./components/NetflixIntro";
+
 import LivingBackground from "./components/LivingBackground";
 import Storm from "./components/Storm";
 
@@ -77,7 +79,7 @@ export default function Home() {
       )}
 
       {/* Splash Screen */}
-      {loading && <SplashScreen onFinish={() => setLoading(false)} />}
+      {loading && <NetflixIntro onComplete={() => setLoading(false)} letter="I" />}
       
 
 

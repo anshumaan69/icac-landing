@@ -1,97 +1,125 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 export default function SplashScreen({ onFinish }: { onFinish: () => void }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLHeadingElement>(null);
-  const subTextRef = useRef<HTMLParagraphElement>(null);
+  const spectrumRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
     const tl = gsap.timeline({
       onComplete: onFinish,
+      defaults: { ease: "power2.inOut", force3D: true }
     });
 
-    // Initial State
-    gsap.set(containerRef.current, { opacity: 1 });
-    gsap.set(textRef.current, { opacity: 0, scale: 0.8 });
-    gsap.set(subTextRef.current, { opacity: 0 });
+    const chars = textRef.current?.innerText.split("") || [];
+    
+    // Initial States
+    gsap.set(containerRef.current, { opacity: 1, backgroundColor: "#000000" });
+    gsap.set(textRef.current, { opacity: 0, scale: 0.5 });
+    gsap.set(".spectrum-bar", { scaleY: 0, opacity: 0 });
 
-    // 1. Text Flicker In
+    // 1. "Ta-dum" Pop In
     tl.to(textRef.current, {
       opacity: 1,
-      duration: 0.1,
-      repeat: 5,
-      yoyo: true,
-      ease: "steps(1)",
-    })
-    .to(textRef.current, {
-      opacity: 1,
       scale: 1,
+      duration: 0.8,
+      ease: "elastic.out(1, 0.5)",
+    })
+    
+    // 2. Idle Zoom (The "Hold")
+    .to(textRef.current, {
+      scale: 1.1,
+      duration: 1.2,
+      ease: "power1.inOut",
+    }, "-=0.2")
+
+    // 3. The Zoom into the Void + Spectrum
+    .add("zoomStart")
+    
+    // Text explodes
+    .to(textRef.current, {
+      scale: 60,
+      opacity: 0,
+      letterSpacing: "100px",
+      duration: 1.2,
+      ease: "expo.in",
+    }, "zoomStart")
+
+    // Spectrum Bars shoot up
+    .to(".spectrum-bar", {
+      scaleY: 1,
+      opacity: 1,
+      duration: 0.4,
+      stagger: {
+        amount: 0.2,
+        from: "center",
+        grid: "auto"
+      },
+      ease: "power2.out",
+    }, "zoomStart+=0.1")
+    
+    // Bars fade out as they fill screen
+    .to(".spectrum-bar", {
+      opacity: 0,
       duration: 0.5,
       ease: "power2.out",
-    });
+    }, "zoomStart+=0.6")
 
-    // 2. Subtext Typewriter (simulated with clip-path or just simple reveal)
-    tl.to(subTextRef.current, {
-      opacity: 1,
-      duration: 0.5,
-      onStart: () => {
-        // Glitch effect loop
-        gsap.to(textRef.current, {
-          x: () => Math.random() * 10 - 5,
-          y: () => Math.random() * 10 - 5,
-          skewX: () => Math.random() * 20 - 10,
-          duration: 0.1,
-          repeat: 10,
-          yoyo: true,
-          ease: "rough",
-        });
-      }
-    });
-
-    // 3. Intense Shake & Red Flash
-    tl.to(containerRef.current, {
-      backgroundColor: "#1a0000", // Dark red
-      duration: 0.1,
-      repeat: 3,
-      yoyo: true,
-    })
+    // 4. Fade to content
     .to(containerRef.current, {
-      backgroundColor: "#000000",
-      duration: 0.1,
-    });
-
-    // 4. Zoom into Void (Scale up text until it covers screen, or just fade out)
-    tl.to([textRef.current, subTextRef.current], {
-      scale: 50,
       opacity: 0,
-      duration: 1.5,
-      ease: "expo.in",
-    }, "+=0.5");
-
-    // 5. Fade out container
-    tl.to(containerRef.current, {
-      opacity: 0,
-      duration: 0.5,
+      duration: 0.4,
       ease: "power2.inOut",
-    }, "-=0.5");
+    }, "-=0.2");
 
   }, { scope: containerRef });
 
+  // Brighter Netflix spectrum colors
+  const spectrumColors = [
+    "#D81F26", // Red
+    "#E50914", // Brand Red
+    "#FF0000", // Bright Red
+    "#FF7F00", // Orange for highlight
+    "#FF00FF", // Magenta for depth
+    "#0000FF", // Blue for contrast
+    "#00FFFF", // Cyan for pop
+    "#E50914", // Brand Red
+    "#8B0000", // Dark Red
+  ];
+
   return (
     <div ref={containerRef} className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black overflow-hidden cursor-none">
-      <h1 ref={textRef} className="text-6xl md:text-9xl font-serif text-blood font-bold tracking-tighter drop-shadow-[0_0_30px_rgba(229,9,20,0.8)] text-center">
+      
+      {/* Spectrum Effect Container */}
+      <div ref={spectrumRef} className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-80">
+        <div className="flex gap-1 h-screen w-full items-center justify-center">
+          {Array.from({ length: 19 }).map((_, i) => (
+             <div 
+               key={i}
+               className="spectrum-bar w-2 md:w-6 h-full origin-bottom"
+               style={{ 
+                 backgroundColor: spectrumColors[i % spectrumColors.length],
+                 boxShadow: `0 0 20px ${spectrumColors[i % spectrumColors.length]}`,
+               }}
+             />
+          ))}
+        </div>
+      </div>
+
+      <h1 
+        ref={textRef} 
+        className="relative z-10 text-7xl md:text-[12rem] font-bold tracking-tighter text-[#E50914] drop-shadow-[0_0_60px_rgba(229,9,20,0.6)]"
+        style={{ fontFamily: "'Arial Black', 'Helvetica Neue', sans-serif" }}
+      >
         ICAC
       </h1>
-      <p ref={subTextRef} className="mt-8 text-xl md:text-2xl font-mono text-neon-blue tracking-[0.5em] animate-pulse">
-        INITIALIZING THE UPSIDE DOWN...
-      </p>
       
-      {/* Glitch Overlay */}
-      <div className="absolute inset-0 pointer-events-none opacity-10 bg-[url('https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif')] bg-cover mix-blend-overlay" />
+      {/* Cinematic Vignette */}
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.9)_100%)] z-20" />
     </div>
   );
 }
