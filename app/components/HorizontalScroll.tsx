@@ -62,7 +62,7 @@ export default function HorizontalScroll() {
           {/* Card 1: Online Elimination */}
           <div className="timeline-card flex flex-col md:flex-row gap-8 items-center relative">
             <div className="hidden md:block w-1/2 text-right pr-12">
-              <h3 className="text-3xl font-serif text-white mb-2">The Elimination</h3>
+              <h3 className="text-3xl font-serif text-white mb-2">Preliminary Round</h3>
               <p className="text-neon-blue font-mono text-xl">Online Round</p>
             </div>
             
@@ -78,11 +78,11 @@ export default function HorizontalScroll() {
                 <div className="space-y-4 font-mono text-gray-300">
                   <div className="flex items-center gap-3">
                     <Calendar className="w-5 h-5 text-neon-blue" />
-                    <span>Feb 15th, 2026</span>
+                    <span>Feb 14th, 2026</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-neon-blue" />
-                    <span>120 minutes</span>
+                    <span>150 minutes</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Globe className="w-5 h-5 text-neon-blue" />
@@ -164,7 +164,7 @@ export default function HorizontalScroll() {
                   </div>
                 </div>
                 <p className="mt-6 text-gray-400 italic border-l-2 border-blood pl-4">
-                  "3 Hours 20 Mins of intense algorithmic warfare."
+                  "120 minutes of intense algorithmic warfare."
                 </p>
               </div>
             </div>
