@@ -29,7 +29,7 @@ export default function Home() {
       if (playPromise !== undefined) {
         playPromise.catch(error => {
           console.log("Autoplay prevented:", error);
-          setIsMuted(true); // Update state if autoplay is blocked
+          // setIsMuted(true); // Update state if autoplay is blocked
         });
       }
     }
