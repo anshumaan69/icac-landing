@@ -142,7 +142,7 @@ export default function Hero() {
 
         <div ref={ctaRef} className="mt-16 flex flex-col items-center gap-6">
           <Link 
-            href="https://unstop.com" 
+            href="https://unstop.com/o/lOzNLSq?lb=QtAegBiO&utm_medium=Share&utm_source=googlgro46414&utm_campaign=Online_coding_challenge" 
             target="_blank"
             className="group relative inline-flex items-center justify-center px-16 py-5 overflow-hidden font-mono font-bold tracking-widest text-white bg-transparent border border-blood/50 rounded-lg transition-all duration-300 hover:border-blood hover:shadow-[0_0_30px_rgba(197,15,31,0.4)]"
           >
@@ -155,19 +155,14 @@ export default function Hero() {
 
           <div className="flex flex-wrap justify-center gap-4 md:gap-8">
             <Link 
-              href="#" 
+              href="/ICAC RuleBook.pdf" 
+              target="_blank"
               className="flex items-center gap-2 px-6 py-3 text-sm font-mono text-gray-400 hover:text-white border border-transparent hover:border-white/20 rounded-md transition-all duration-300 bg-white/5 hover:bg-white/10"
             >
               <BookOpen className="w-4 h-4 text-blood" />
               <span>Rule Book</span>
             </Link>
-            <Link 
-              href="#" 
-              className="flex items-center gap-2 px-6 py-3 text-sm font-mono text-gray-400 hover:text-white border border-transparent hover:border-white/20 rounded-md transition-all duration-300 bg-white/5 hover:bg-white/10"
-            >
-              <FileSpreadsheet className="w-4 h-4 text-blood" />
-              <span>Brochure</span>
-            </Link>
+
           </div>
         </div>
       </div>

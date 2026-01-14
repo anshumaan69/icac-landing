@@ -52,7 +52,7 @@ export default function Registration() {
               </li>
               <li className="flex items-center gap-4">
                 <Clock className="w-6 h-6 text-blood" />
-                <span className="text-xl text-blood font-bold">Ends: Feb 8th, 2026</span>
+                <span className="text-xl text-blood font-bold">Ends: Feb 13th, 2026</span>
               </li>
             </ul>
           </div>
@@ -83,7 +83,7 @@ export default function Registration() {
 
         <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-6 reg-card">
           <Link 
-            href="https://unstop.com" 
+            href="https://unstop.com/o/lOzNLSq?lb=QtAegBiO&utm_medium=Share&utm_source=googlgro46414&utm_campaign=Online_coding_challenge" 
             target="_blank"
             className="inline-flex items-center gap-2 px-8 py-4 bg-blood text-white font-bold uppercase tracking-widest hover:bg-red-700 transition-all duration-300 rounded-sm shadow-[0_0_20px_rgba(229,9,20,0.4)]"
           >
@@ -91,7 +91,7 @@ export default function Registration() {
           </Link>
 
           <Link 
-            href="#" 
+            href="https://forms.gle/ccAuV9tfddzXd4Bi6" 
             target="_blank"
             className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border border-gray-700 text-gray-300 font-bold uppercase tracking-widest hover:bg-white/5 hover:border-gray-500 hover:text-white transition-all duration-300 rounded-sm"
           >
