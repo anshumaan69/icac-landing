@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Merriweather, Space_Mono } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "./components/CustomCursor";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const serif = Merriweather({
   weight: ["300", "400", "700", "900"],
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <CustomCursor />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
