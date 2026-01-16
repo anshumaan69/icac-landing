@@ -72,7 +72,7 @@ export default function Prizes() {
           {/* Finalists */}
           <div className="prize-card bg-black/80 border border-white/10 p-8 rounded-xl flex flex-col items-center hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:scale-105 transition-all duration-300 backdrop-blur-sm group">
             <Award className="w-16 h-16 text-gray-300 mb-6 group-hover:rotate-12 transition-transform" />
-            <h3 className="text-2xl font-serif text-white mb-2">All Finalists</h3>
+            <h3 className="text-2xl font-serif text-white mb-2">All Participants</h3>
             <p className="font-mono text-gray-300 text-xl font-bold">Certificates</p>
             <p className="text-gray-500 text-sm mt-4">Proof of your survival.</p>
           </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin, User, Phone, Mail } from "lucide-react";
+import { MapPin, User, Phone, Mail, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -26,26 +26,63 @@ export default function Footer() {
               <User className="w-5 h-5 text-blood" />
               <span>The Gatekeepers</span>
             </h3>
-            <div className="space-y-3 pl-0 md:pl-7">
-              <div className="flex flex-col md:flex-row justify-between items-center text-sm font-mono gap-1 border-b border-white/5 pb-2 last:border-0">
-                <span className="text-gray-300">Divyam Asthana</span>
-                <a href="tel:8303011718" className="flex items-center gap-2 text-gray-500 hover:text-neon-blue transition-colors">
-                  <Phone className="w-3 h-3" /> 83030 11718
-                </a>
+              <div className="flex flex-col gap-4 pl-0 md:pl-7">
+                
+                {/* Krishna Gupta */}
+                <div className="flex flex-col gap-1 border-b border-white/5 pb-3">
+                  <div className="flex justify-between items-center text-sm font-mono">
+                    <span className="text-gray-300">Krishna Gupta</span>
+                    <div className="flex gap-3">
+                       <a href="mailto:krishna.kietian@gmail.com" className="text-gray-500 hover:text-neon-blue transition-colors">
+                        <Mail className="w-4 h-4" />
+                       </a>
+                       <a href="https://www.linkedin.com/in/krisshxna/" target="_blank" className="text-gray-500 hover:text-neon-blue transition-colors">
+                        <Linkedin className="w-4 h-4" />
+                       </a>
+                       <a href="https://www.instagram.com/krisshxna/" target="_blank" className="text-gray-500 hover:text-neon-blue transition-colors">
+                        <Instagram className="w-4 h-4" />
+                       </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Divyam Asthana */}
+                <div className="flex flex-col gap-1 border-b border-white/5 pb-3">
+                  <div className="flex justify-between items-center text-sm font-mono">
+                    <span className="text-gray-300">Divyam Asthana</span>
+                    <div className="flex gap-3">
+                       <a href="mailto:divwork555@gmail.com" className="text-gray-500 hover:text-neon-blue transition-colors">
+                        <Mail className="w-4 h-4" />
+                       </a>
+                       <a href="https://www.linkedin.com/in/divyam-asthana/" target="_blank" className="text-gray-500 hover:text-neon-blue transition-colors">
+                        <Linkedin className="w-4 h-4" />
+                       </a>
+                       <a href="https://www.instagram.com/divyam_asthana.001/" target="_blank" className="text-gray-500 hover:text-neon-blue transition-colors">
+                        <Instagram className="w-4 h-4" />
+                       </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Kartikey Singh */}
+                <div className="flex flex-col gap-1 pb-2">
+                  <div className="flex justify-between items-center text-sm font-mono">
+                    <span className="text-gray-300">Kartikey Singh</span>
+                    <div className="flex gap-3">
+                       <a href="mailto:kartikeysingh99999@gmail.com" className="text-gray-500 hover:text-neon-blue transition-colors">
+                        <Mail className="w-4 h-4" />
+                       </a>
+                       <a href="https://www.linkedin.com/in/kartikey-singh-54a560288/" target="_blank" className="text-gray-500 hover:text-neon-blue transition-colors">
+                        <Linkedin className="w-4 h-4" />
+                       </a>
+                       <a href="https://www.instagram.com/kartikey1s" target="_blank" className="text-gray-500 hover:text-neon-blue transition-colors">
+                        <Instagram className="w-4 h-4" />
+                       </a>
+                    </div>
+                  </div>
+                </div>
+
               </div>
-              <div className="flex flex-col md:flex-row justify-between items-center text-sm font-mono gap-1 border-b border-white/5 pb-2 last:border-0">
-                <span className="text-gray-300">Krishna Gupta</span>
-                <a href="tel:9305707287" className="flex items-center gap-2 text-gray-500 hover:text-neon-blue transition-colors">
-                  <Phone className="w-3 h-3" /> 93057 07287
-                </a>
-              </div>
-              <div className="flex flex-col md:flex-row justify-between items-center text-sm font-mono gap-1 border-b border-white/5 pb-2 last:border-0">
-                <span className="text-gray-300">Kartikey Singh</span>
-                <a href="tel:8576878931" className="flex items-center gap-2 text-gray-500 hover:text-neon-blue transition-colors">
-                   <Phone className="w-3 h-3" /> 85768 78931
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* Contact & Email */}

@@ -155,12 +155,21 @@ export default function Hero() {
 
           <div className="flex flex-wrap justify-center gap-4 md:gap-8">
             <Link 
-              href="/ICAC RuleBook.pdf" 
+              href="/ICAC-RuleBookGDG.pdf" 
               target="_blank"
               className="flex items-center gap-2 px-6 py-3 text-sm font-mono text-gray-400 hover:text-white border border-transparent hover:border-white/20 rounded-md transition-all duration-300 bg-white/5 hover:bg-white/10"
             >
               <BookOpen className="w-4 h-4 text-blood" />
               <span>Rule Book</span>
+            </Link>
+
+            <Link 
+              href="/ICAC Brochure.pdf" 
+              target="_blank"
+              className="flex items-center gap-2 px-6 py-3 text-sm font-mono text-gray-400 hover:text-white border border-transparent hover:border-white/20 rounded-md transition-all duration-300 bg-white/5 hover:bg-white/10"
+            >
+              <FileSpreadsheet className="w-4 h-4 text-blood" />
+              <span>Brochure</span>
             </Link>
 
           </div>

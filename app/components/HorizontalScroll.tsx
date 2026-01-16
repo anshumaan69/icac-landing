@@ -90,7 +90,7 @@ export default function HorizontalScroll() {
                   </div>
                 </div>
                 <p className="mt-6 text-gray-400 italic border-l-2 border-neon-blue pl-4">
-                  "Top 30 teams qualify for the final showdown."
+                  "Top performing teams qualify for The Grand Finale."
                 </p>
               </div>
             </div>
@@ -136,7 +136,7 @@ export default function HorizontalScroll() {
           {/* Card 2: Final Showdown */}
           <div className="timeline-card flex flex-col md:flex-row gap-8 items-center relative">
             <div className="hidden md:block w-1/2 text-right pr-12">
-              <h3 className="text-3xl font-serif text-white mb-2">The Final Showdown</h3>
+              <h3 className="text-3xl font-serif text-white mb-2">The Grand Finale</h3>
               <p className="text-blood font-mono text-xl">Offline Round</p>
             </div>
             
@@ -145,7 +145,7 @@ export default function HorizontalScroll() {
             <div className="w-full md:w-1/2 pl-12 md:pl-12">
               <div className="bg-black/80 backdrop-blur-md border border-blood/30 p-8 rounded-xl hover:bg-black/90 transition-all duration-300 group">
                 <div className="md:hidden mb-4">
-                  <h3 className="text-2xl font-serif text-white">The Final Showdown</h3>
+                  <h3 className="text-2xl font-serif text-white">The Grand Finale</h3>
                   <p className="text-blood font-mono">Offline Round</p>
                 </div>
 
