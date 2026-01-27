@@ -52,7 +52,7 @@ export default function Registration() {
               </li>
               <li className="flex items-center gap-4">
                 <Clock className="w-6 h-6 text-blood" />
-                <span className="text-xl text-blood font-bold">Ends: Feb 13th, 2026</span>
+                <span className="text-xl text-blood font-bold">Ends: 11:59 pm Feb 11th, 2026</span>
               </li>
             </ul>
           </div>
