@@ -3,6 +3,7 @@
 import { MapPin, User, Phone, Mail, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
+
   return (
     <footer className="py-12 px-4 md:px-12 bg-black border-t border-gray-900 relative z-50">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
@@ -31,9 +32,9 @@ export default function Footer() {
                 {/* Krishna Gupta */}
                 <div className="flex flex-col gap-1 border-b border-white/5 pb-3">
                   <div className="flex justify-between items-center text-sm font-mono">
-                    <a href="mailto:krishna.kietian@gmail.com" className="text-gray-300 hover:text-neon-blue transition-colors">Krishna Gupta</a>
+                    <a href="mailto:krishna.kietian@gmail.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-neon-blue transition-colors">Krishna Gupta</a>
                     <div className="flex gap-3">
-                       <a href="mailto:krishna.kietian@gmail.com" className="text-gray-500 hover:text-neon-blue transition-colors">
+                       <a href="mailto:krishna.kietian@gmail.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-neon-blue transition-colors">
                         <Mail className="w-4 h-4" />
                        </a>
                        <a href="https://www.linkedin.com/in/krisshxna/" target="_blank" className="text-gray-500 hover:text-neon-blue transition-colors">
@@ -49,9 +50,9 @@ export default function Footer() {
                 {/* Divyam Asthana */}
                 <div className="flex flex-col gap-1 border-b border-white/5 pb-3">
                   <div className="flex justify-between items-center text-sm font-mono">
-                    <a href="mailto:divwork555@gmail.com" className="text-gray-300 hover:text-neon-blue transition-colors">Divyam Asthana</a>
+                    <a href="mailto:divwork555@gmail.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-neon-blue transition-colors">Divyam Asthana</a>
                     <div className="flex gap-3">
-                       <a href="mailto:divwork555@gmail.com" className="text-gray-500 hover:text-neon-blue transition-colors">
+                       <a href="mailto:divwork555@gmail.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-neon-blue transition-colors">
                         <Mail className="w-4 h-4" />
                        </a>
                        <a href="https://www.linkedin.com/in/divyam-asthana/" target="_blank" className="text-gray-500 hover:text-neon-blue transition-colors">
@@ -67,9 +68,9 @@ export default function Footer() {
                 {/* Kartikey Singh */}
                 <div className="flex flex-col gap-1 pb-2">
                   <div className="flex justify-between items-center text-sm font-mono">
-                    <a href="mailto:kartikeysingh99999@gmail.com" className="text-gray-300 hover:text-neon-blue transition-colors">Kartikey Singh</a>
+                    <a href="mailto:kartikeysingh99999@gmail.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-neon-blue transition-colors">Kartikey Singh</a>
                     <div className="flex gap-3">
-                       <a href="mailto:kartikeysingh99999@gmail.com" className="text-gray-500 hover:text-neon-blue transition-colors">
+                       <a href="mailto:kartikeysingh99999@gmail.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-neon-blue transition-colors">
                         <Mail className="w-4 h-4" />
                        </a>
                        <a href="https://www.linkedin.com/in/kartikey-singh-54a560288/" target="_blank" className="text-gray-500 hover:text-neon-blue transition-colors">
@@ -93,13 +94,24 @@ export default function Footer() {
                  <span>Transmissions</span>
               </h3>
               <div className="pl-0 md:pl-7">
-                <a href="mailto:dsc@kiet.edu" className="block text-gray-400 font-mono text-sm hover:text-neon-blue transition-colors">
+                <a href="mailto:dsc@kiet.edu" target="_blank" rel="noopener noreferrer" className="block text-gray-400 font-mono text-sm hover:text-neon-blue transition-colors">
                   dsc@kiet.edu
                 </a>
               </div>
             </div>
             
-            {/* Removed redundant section to clean up UI as requested previously, keeping it minimal */}
+            {/* Instagram */}
+            <div className="space-y-2">
+               <h3 className="text-xl font-serif text-white flex items-center justify-center md:justify-start gap-2">
+                 <Instagram className="w-5 h-5 text-blood" />
+                 <span>Follow Us</span>
+               </h3>
+               <div className="pl-0 md:pl-7">
+                <a href="https://www.instagram.com/gdg.kiet/" target="_blank" rel="noopener noreferrer" className="block text-gray-400 font-mono text-sm hover:text-neon-blue transition-colors">
+                  @gdg.kiet
+                </a>
+               </div>
+            </div>
           </div>
 
         </div>
@@ -117,6 +129,15 @@ export default function Footer() {
             alt="GDG Logo" 
             className="h-10 w-auto object-contain hover:scale-105 transition-transform duration-300"
           />
+          <div className="h-8 w-px bg-gray-700 mx-2"></div>
+          <a 
+            href="https://www.instagram.com/gdg.kiet/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="p-2 bg-white/5 hover:bg-blood/20 text-gray-400 hover:text-blood border border-white/10 hover:border-blood/50 rounded-full transition-all duration-300"
+          >
+            <Instagram className="w-5 h-5" />
+          </a>
         </div>
       </div>
     </footer>

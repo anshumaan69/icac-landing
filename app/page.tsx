@@ -9,6 +9,7 @@ import SpecialGuest from "./components/SpecialGuest";
 import Sponsors from "./components/Sponsors";
 import Prizes from "./components/Prizes";
 import Footer from "./components/Footer";
+import Team from "./components/Team";
 import SplashScreen from "./components/SplashScreen";
 
 import NetflixIntro from "./components/NetflixIntro";
@@ -102,6 +103,7 @@ export default function Home() {
         <Prizes />
         <SpecialGuest />
         {/* <Sponsors /> */}
+        {/* <Team /> */}
         <Footer />
       </div>
     </main>
