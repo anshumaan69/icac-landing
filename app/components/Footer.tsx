@@ -4,7 +4,7 @@ import { MapPin, User, Phone, Mail, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="py-12 px-4 md:px-12 bg-black border-t border-gray-900 relative z-10">
+    <footer className="py-12 px-4 md:px-12 bg-black border-t border-gray-900 relative z-50">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
           
           {/* KIET Details */}
@@ -31,7 +31,7 @@ export default function Footer() {
                 {/* Krishna Gupta */}
                 <div className="flex flex-col gap-1 border-b border-white/5 pb-3">
                   <div className="flex justify-between items-center text-sm font-mono">
-                    <span className="text-gray-300">Krishna Gupta</span>
+                    <a href="mailto:krishna.kietian@gmail.com" className="text-gray-300 hover:text-neon-blue transition-colors">Krishna Gupta</a>
                     <div className="flex gap-3">
                        <a href="mailto:krishna.kietian@gmail.com" className="text-gray-500 hover:text-neon-blue transition-colors">
                         <Mail className="w-4 h-4" />
@@ -49,7 +49,7 @@ export default function Footer() {
                 {/* Divyam Asthana */}
                 <div className="flex flex-col gap-1 border-b border-white/5 pb-3">
                   <div className="flex justify-between items-center text-sm font-mono">
-                    <span className="text-gray-300">Divyam Asthana</span>
+                    <a href="mailto:divwork555@gmail.com" className="text-gray-300 hover:text-neon-blue transition-colors">Divyam Asthana</a>
                     <div className="flex gap-3">
                        <a href="mailto:divwork555@gmail.com" className="text-gray-500 hover:text-neon-blue transition-colors">
                         <Mail className="w-4 h-4" />
@@ -67,7 +67,7 @@ export default function Footer() {
                 {/* Kartikey Singh */}
                 <div className="flex flex-col gap-1 pb-2">
                   <div className="flex justify-between items-center text-sm font-mono">
-                    <span className="text-gray-300">Kartikey Singh</span>
+                    <a href="mailto:kartikeysingh99999@gmail.com" className="text-gray-300 hover:text-neon-blue transition-colors">Kartikey Singh</a>
                     <div className="flex gap-3">
                        <a href="mailto:kartikeysingh99999@gmail.com" className="text-gray-500 hover:text-neon-blue transition-colors">
                         <Mail className="w-4 h-4" />
