@@ -136,3 +136,7 @@ a, button, input, textarea, select, [role='button'] {
 .animate-carousel-scroll {
   animation: scroll 20s linear infinite;
 }
+
+.hover\:pause:hover {
+  animation-play-state: paused;
+}
