@@ -17,93 +17,101 @@ interface TeamMember {
 }
 
 const TEAM_MEMBERS: TeamMember[] = [
+    {
+    name: "Krishna Gupta",
+    role: "",
+    email: "krishna.kietian@gmail.com",
+    linkedin: "https://www.linkedin.com/in/krisshxna/",
+    resume: "https://drive.google.com/open?id=1Q5sM1qLD-Evem7sHVcBNXYaYIbfBDDrV",
+    image: "/assets/team/KrishnaGupta.jpeg"
+  },
   {
     name: "Krishna Kumar Agrahari",
-    role: "Organizer",
+    role: "",
     email: "krishnaagrahari.16@gmail.com",
     linkedin: "https://www.linkedin.com/in/krishnaagrahari16?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     resume: "https://drive.google.com/open?id=1Q5sM1qLD-Evem7sHVcBNXYaYIbfBDDrV",
-    image: "https://drive.google.com/uc?export=view&id=1Q5sM1qLD-Evem7sHVcBNXYaYIbfBDDrV"
+    image: "/assets/team/krishna-agrahari.jpg"
   },
   {
     name: "Kartikey Singh",
-    role: "Organizer",
+    role: "",
     email: "kartikeysingh99999@gmail.com",
     linkedin: "https://www.linkedin.com/in/kartikey-singh-54a560288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     resume: "https://drive.google.com/open?id=14h3itPBq2uQRzW3AgO6FYexKSoF8Z5PZ",
-    image: "https://drive.google.com/uc?export=view&id=14h3itPBq2uQRzW3AgO6FYexKSoF8Z5PZ"
+    image: "/assets/team/kartikey-singh.jpg"
   },
   {
     name: "Harsh Chaudhary",
-    role: "Organizer",
+    role: "",
     email: "chauharsh09@gmail.com",
     linkedin: "https://www.linkedin.com/in/harsh-chaudhary-5bb7882a4/",
     resume: "https://drive.google.com/open?id=1oQ6lWRLpVxJd7T_smD8QFUB3gLAkwomF",
-    image: "https://drive.google.com/uc?export=view&id=1oQ6lWRLpVxJd7T_smD8QFUB3gLAkwomF"
+    image: "/assets/team/harsh-chaudhary.png"
   },
   {
     name: "Vansh Maheshwari",
-    role: "Organizer",
+    role: "",
     email: "maheshwarivansh931@gmail.com",
     linkedin: "https://www.linkedin.com/in/vansh-maheshwari931/",
     resume: "https://drive.google.com/open?id=12B64WHRXbLitzqL5nah97hyeQfrSA7hF",
-    image: "https://drive.google.com/uc?export=view&id=12B64WHRXbLitzqL5nah97hyeQfrSA7hF"
+    image: "/assets/team/vansh-maheshwari.jpeg"
   },
   {
     name: "Sameer Patel",
-    role: "Organizer",
+    role: "",
     email: "sameer.2327it1195@kiet.edu",
     linkedin: "https://www.linkedin.com/in/sameerpat11el/",
     resume: "https://drive.google.com/open?id=17K1eh0-Qn1hd7gnB8T4BpKgYGM4_LRXS",
-    image: "https://drive.google.com/uc?export=view&id=17K1eh0-Qn1hd7gnB8T4BpKgYGM4_LRXS"
+    image: "/assets/team/sameer-patel.jpg"
   },
   {
     name: "Deepanshu Singh",
-    role: "Organizer",
+    role: "",
     email: "deep4nxu@gmail.com",
     linkedin: "https://www.linkedin.com/in/deepanshu-singh-468b59284?trk=contact-info",
     resume: "https://drive.google.com/open?id=1I4K_B6X2EShxPeyOwlq1t-JP3vDE2VHL",
-    image: "https://drive.google.com/uc?export=view&id=1I4K_B6X2EShxPeyOwlq1t-JP3vDE2VHL"
+    image: "/assets/team/deepanshu-singh.jpeg"
   },
   {
     name: "Prince Kumar Yadav",
-    role: "Organizer",
+    role: "",
     email: "princeyadav61204@gmail.com",
     linkedin: "https://www.linkedin.com/in/princeyadav9099?trk=blended-typeahead",
     resume: "https://drive.google.com/open?id=15fURGCW1QIutEUMvvdfuZKx5QCToqy93",
-    image: "https://drive.google.com/uc?export=view&id=15fURGCW1QIutEUMvvdfuZKx5QCToqy93"
+    image: "/assets/team/prince-kumar-yadav.jpg"
   },
   {
     name: "Kushwaha Rajat Kamalakant",
-    role: "Organizer",
+    role: "",
     email: "rajatkshwh131@gmail.com",
     linkedin: "https://www.linkedin.com/in/kushwaha-rajat",
     resume: "https://drive.google.com/open?id=1i8bYkVqDBJ6osahQO0NkN5y805BbgGWa",
-    image: "https://drive.google.com/uc?export=view&id=1i8bYkVqDBJ6osahQO0NkN5y805BbgGWa"
+    image: "/assets/team/kushwaha-rajat.jpg"
   },
   {
     name: "Divyam Asthana",
-    role: "Organizer",
+    role: "",
     email: "divwork555@gmail.com",
     linkedin: "https://www.linkedin.com/in/divyam-asthana",
     resume: "https://drive.google.com/open?id=1Gf3tniNw4W1vmK_U3EbEbq4jZtH3sJjL",
-    image: "https://drive.google.com/uc?export=view&id=1Gf3tniNw4W1vmK_U3EbEbq4jZtH3sJjL"
+    image: "/assets/team/divyam-asthana.jpeg"
   },
   {
     name: "Harsh Chandra Srivastava",
-    role: "Organizer",
+    role: "",
     email: "harshcsrivastava@gmail.com",
     linkedin: "https://www.linkedin.com/in/harshcsrivastava/",
     resume: "https://drive.google.com/open?id=18IbuyMFaT870Pbte2otRoAgpvVOH3fDO",
-    image: "https://drive.google.com/uc?export=view&id=18IbuyMFaT870Pbte2otRoAgpvVOH3fDO"
+    image: "/assets/team/harsh-srivastava.jpg"
   },
   {
     name: "Tanmay Shukla",
-    role: "Organizer",
+    role: "",
     email: "tanmayshukla1408@gmail.com",
     linkedin: "https://www.linkedin.com/in/tanmayshukla14/",
     resume: "https://drive.google.com/open?id=1hKNi5VrRVzYRm1ndBs3dDoSJTMxjDRIO",
-    image: "https://drive.google.com/uc?export=view&id=1hKNi5VrRVzYRm1ndBs3dDoSJTMxjDRIO"
+    image: "/assets/team/tanmay-shukla.jpeg"
   }
 ];
 
@@ -186,17 +194,7 @@ export default function Team() {
                                 >
                                     <Linkedin className="w-5 h-5" />
                                 </a>
-                                {member.resume && (
-                                    <a 
-                                        href={member.resume} 
-                                        target="_blank" 
-                                        rel="noopener noreferrer"
-                                        className="bg-white/5 p-2 rounded-full hover:bg-neon-blue/20 hover:text-neon-blue transition-all"
-                                        title="Resume"
-                                    >
-                                        <FileText className="w-5 h-5" />
-                                    </a>
-                                )}
+                               
                             </div>
                         </div>
                     </div>

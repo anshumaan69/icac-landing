@@ -103,7 +103,7 @@ export default function Home() {
         <Prizes />
         <SpecialGuest />
         {/* <Sponsors /> */}
-         {/* <Team />  */}
+         <Team /> 
         <Footer />
       </div>
     </main>
