@@ -11,6 +11,7 @@ import Prizes from "./components/Prizes";
 import Footer from "./components/Footer";
 import Team from "./components/Team";
 import SplashScreen from "./components/SplashScreen";
+import CommunityPartners from "./components/CommunityPartners";
 
 import NetflixIntro from "./components/NetflixIntro";
 
@@ -102,6 +103,7 @@ export default function Home() {
         <Registration />
         <Prizes />
         <SpecialGuest />
+        {/* <CommunityPartners /> */}
         {/* <Sponsors /> */}
          <Team /> 
         <Footer />

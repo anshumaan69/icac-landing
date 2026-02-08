@@ -47,7 +47,7 @@ export default function SpecialGuest() {
              <div className="absolute inset-0 w-full h-full rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(229,9,20,0.3)] border-2 border-blood/30">
                 {/* Actual Image */}
                 <div className="w-full h-full bg-gradient-to-br from-gray-900 to-black relative">
-                   <img src="/assets/raghav-garg.png" alt="Raghav Garg" className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                   <img src="/assets/raghav-garg.png" alt="Raghav Garg" className="absolute inset-0 w-full h-full object-cover transition-all duration-500" />
                    <div className="absolute bottom-4 left-0 right-0 text-center z-10">
                       <div className="animate-pulse">
                         <span className="inline-block px-3 py-1 bg-blood/80 backdrop-blur-sm text-white text-xs font-mono font-bold tracking-widest uppercase rounded shadow-lg">

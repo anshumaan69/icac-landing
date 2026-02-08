@@ -152,7 +152,7 @@ export default function Team() {
                         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/90 z-10" />
                         
                         {/* Image */}
-                        <div className="h-80 w-full bg-neutral-900 relative grayscale group-hover:grayscale-0 transition-all duration-700">
+                        <div className="h-80 w-full bg-neutral-900 relative transition-all duration-700">
                              <img 
                                 src={member.image || `/team/placeholder-${index % 5}.jpg`} 
                                 alt={member.name}
